@@ -560,7 +560,7 @@ const Page: FC = () => {
                 {/* Footer */}
                 <footer className="bg-[#1b2a34] text-gray-400 py-12 px-4 md:px-8">
                     <div className="max-w-7xl mx-auto">
-                        <div className="grid md:grid-cols-4 gap-8 mb-8">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
                             <div>
                                 <h4 className="font-semibold text-white mb-4">Meta Technologies</h4>
                                 <ul className="space-y-2 text-sm">
@@ -613,7 +613,7 @@ const Page: FC = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="flex gap-6">
+                            <div className="flex flex-wrap gap-x-4 gap-y-2">
                                 <a href="#" className="text-gray-400 hover:text-white transition">{t('About')}</a>
                                 <a href="#" className="text-gray-400 hover:text-white transition">{t('Developers')}</a>
                                 <a href="#" className="text-gray-400 hover:text-white transition">{t('Careers')}</a>
