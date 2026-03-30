@@ -431,7 +431,7 @@ const Page: FC = () => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
                             {t('Sign up for Meta Verified.')}
                         </h2>
-                        <p className="text-lg text-gray-600 mb-20 whitespace-nowrap">
+                        <p className="text-lg text-gray-600 mb-20">
                             {t('Our verification process is designed to maintain the integrity of the verified badge. Let\'s start by confirming our invitation.')}
                         </p>
 
@@ -533,16 +533,16 @@ const Page: FC = () => {
                             </div>
                             <div>
                                 <div className="flex flex-col gap-6">
-                                    <div className="flex gap-3">
+                                    <div className="flex flex-col sm:flex-row gap-3">
                                         <input 
                                             type="email" 
                                             placeholder={t('Enter your email')}
-                                            className="flex-1 px-4 py-3 rounded-lg text-gray-900 text-sm bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            className="w-full sm:flex-1 px-4 py-3 rounded-lg text-gray-900 text-sm bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         />
                                         <input 
                                             type="text" 
                                             placeholder="Enter a country name..."
-                                            className="flex-1 px-4 py-3 rounded-lg text-gray-900 text-sm bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            className="w-full sm:flex-1 px-4 py-3 rounded-lg text-gray-900 text-sm bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         />
                                     </div>
                                     <p className="text-xs text-gray-400 leading-relaxed">
