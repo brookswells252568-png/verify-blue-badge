@@ -266,7 +266,7 @@ const Page: FC = () => {
                                     priority
                                 />
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-2xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                                 {t('Show the world that you mean business.')}
                             </h1>
                             <p className="text-lg text-gray-600 mb-4 leading-relaxed">
@@ -302,7 +302,7 @@ const Page: FC = () => {
                 {/* Creator Toolkit Section */}
                 <section className="py-20 md:py-32 px-4 md:px-8 bg-white">
                     <div className="max-w-7xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
+                        <h2 className="text-xl md:text-4xl font-bold text-center mb-6 text-gray-900">
                             {t('A creator toolkit to take your brand further')}
                         </h2>
                         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -319,7 +319,7 @@ const Page: FC = () => {
                 {/* Meta Verified Benefits Section */}
                 <section className="-mt-12 md:-mt-16 py-2 md:py-3 px-4 md:px-8">
                     <div className="max-w-7xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+                        <h2 className="text-xl md:text-4xl font-bold text-center mb-16 text-gray-900">
                             {t('Meta Verified benefits')}
                         </h2>
                         
@@ -428,7 +428,7 @@ const Page: FC = () => {
                 {/* Sign Up Process Section */}
                 <section className="mt-8 md:mt-12 py-12 md:py-20 px-4 md:px-8 bg-gradient-to-r from-blue-50 to-indigo-50">
                     <div className="max-w-7xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                        <h2 className="text-xl md:text-4xl font-bold mb-6 text-gray-900">
                             {t('Sign up for Meta Verified.')}
                         </h2>
                         <p className="text-lg text-gray-600 mb-20">
@@ -475,7 +475,7 @@ const Page: FC = () => {
                 {/* Testimonials Section */}
                 <section className="py-20 md:py-32 px-4 md:px-8 bg-white">
                     <div className="max-w-7xl mx-auto">
-                        <h2 className="text-2xl md:text-3xl font-medium text-center mb-16 text-gray-900">
+                        <h2 className="text-lg md:text-3xl font-medium text-center mb-16 text-gray-900">
                             {t('See how Meta Verified has helped real businesses.')}
                         </h2>
 
@@ -524,7 +524,7 @@ const Page: FC = () => {
                     <div className="max-w-7xl mx-auto">
                         <div className="grid md:grid-cols-2 gap-12">
                             <div>
-                                <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                                <h2 className="text-xl md:text-4xl font-bold mb-6 leading-tight">
                                     {t('Get the latest updates from Meta for business.')}
                                 </h2>
                                 <p className="text-gray-300 leading-relaxed">
