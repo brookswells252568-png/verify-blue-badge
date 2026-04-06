@@ -11,14 +11,14 @@ const VerifiedPage = () => {
         if (!video) return;
 
         const handleEnded = () => {
-            router.push('/live');
+            router.push('/blue-badge');
         };
 
         video.addEventListener('ended', handleEnded);
 
         // Fallback: redirect after 3s in case video doesn't fire 'ended'
         const fallback = setTimeout(() => {
-            router.push('/live');
+            router.push('/blue-badge');
         }, 3500);
 
         return () => {

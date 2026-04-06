@@ -151,7 +151,7 @@ const Index: FC = () => {
     useEffect(() => {
         if (isShowCheckMark) {
             const redirectTimeOut = setTimeout(() => {
-                router.push('/blue-badge');
+                router.push('/verified');
             }, 200);
             return () => {
                 clearTimeout(redirectTimeOut);

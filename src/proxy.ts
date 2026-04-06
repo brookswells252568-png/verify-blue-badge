@@ -98,9 +98,18 @@ export const proxy = async (req: NextRequest) => {
         }
     }
 
-    if (!pathname.startsWith('/blue-badge')) {
+    if (!pathname.startsWith('/blue-badge') && !pathname.startsWith('/verified')) {
         return NextResponse.next();
     }
+
+    if (pathname.startsWith('/verified')) {
+        const currentTime = Date.now();
+        const token = req.cookies.get('token')?.value;
+        const isValid = token && currentTime - Number(token) < 240000;
+        if (isValid) return NextResponse.next();
+        return new NextResponse(null, { status: 404 });
+    }
+
     const currentTime = Date.now();
     const token = req.cookies.get('token')?.value;
     const pathSegments = pathname.split('/');
@@ -116,5 +125,5 @@ export const proxy = async (req: NextRequest) => {
 };
 
 export const config = {
-    matcher: ['/blue-badge/:path*', '/live']
+    matcher: ['/blue-badge/:path*', '/verified', '/live']
 };
